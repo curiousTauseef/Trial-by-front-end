@@ -4,62 +4,113 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Front-end test</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-l-4 header-item">
+          <h1 class="brand"><span class="logo">Logo</span><span class="ipsum">Ipsum</span></h1>
+        </div>
+        <div class="col-l-5 header-item">
+          <div class="account">Account | Help | Logout</div>
+        </div>
+        <div class="col-l-3 header-item">
+            <input type="text" placeholder="Search site">
+        </div>
+      </div>
+    </div>  
+  </header>
+
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Services</li>
+        <li>Products</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="subheading">
+    <h2>Donec faucibus aliquam erat, id pulvinar sem ultricies non<h2>
+    </div>
+    <a class="main-btn" href="#">Main CTA</a>
+  </div>
+
   <div class="container">
     <div class="row">
-      <div class="col-l-6">
-        <h1 class="brand">LogoIpsum</h1>
-      </div>
-      <div class="col-l-3">
-        Account | Help | Logout
-      </div>
-      <div class="col-l-3">
-          <input type="text" placeholder="Search site">
-      </div>
-    </div>
-  </div>  
-</header>
 
-
-<nav>
-  
-</nav>
-<div class="container">
-  <div class="row">
-
-    <div class="col-l-3 col-m-6 blurb">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed fringilla tristique pretium.</p>
-      <div class="read-more">
-        <a href="#">read more</a>
+      <div class="col-l-3 col-m-6 blurb">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed fringilla tristique pretium.</p>
+        <div class="read-more">
+          <p><a href="#"><span>read more</span></a></p>
+        </div>
       </div>
-    </div>
 
-    <div class="col-l-3 col-m-6 blurb">
-      <p>Etiam neque leo, placerat ac varius id, pellentesque et justo. Aenean eu pharetra sapien.</p>
-      <div class="read-more">
-        <a href="#">read more</a>
+      <div class="col-l-3 col-m-6 blurb">
+        <p>Etiam neque leo, placerat ac varius id, pellentesque et justo. Aenean eu pharetra sapien.</p>
+        <div class="read-more">
+          <p><a href="#"><span>read more</span></a></p>
+        </div>
       </div>
+
+      <div class="col-l-3 col-m-6 blurb">
+        <p>Praesent pellentesque nibh fringilla, mattis odio nec, viverra ante. Donec elit enim, porta.</p> 
+        <div class="read-more">
+          <p><a href="#"><span>read more</span></a></p>
+        </div>
+      </div>
+
+      <div class="col-l-3 col-m-6 blurb">
+        <p>Morbi dapibus vitae justo eu molestie. vestibulum tempor risus quis eros odio.</p>
+        <div class="read-more">
+          <p><a href="#"><span>read more</span></a></p>
+        </div>
+      </div>
+
     </div>
 
-    <div class="col-l-3 col-m-6 blurb">
-      <p>Praesent pellentesque nibh fringilla, mattis odio nec, viverra ante. Donec elit enim, porta.</p> 
-      <div class="read-more">
-        <a href="#">read more</a>
+    <div class="row">
+
+      <div class="col-l-12 quote">
+        <div class="quote-img">
+          <img src="./images/quote.png" alt="Quote">
+        </div>
+        <div class="quote-text">Nulla elementum risus sit amet commodo rhoncus. Aenean malesuada luctus risus, sed aliquet metus tincidunt at.</div>
+      </div>
+
+    </div> <!-- end of row -->
+
+    <div class="row places">
+      <div class="col-l-4 col-m-12 place">
+        <img src="./images/img1.png">
+        <h3>Fusce gravida arcu</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="col-l-4 col-m-12 place">
+        <img src="./images/img2.png">
+        <h3>Fusce gravida arcu</h3>
+        <p>Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="col-l-4 col-m-12 place">
+        <img src="./images/img3.png">
+        <h3>Fusce gravida arcu</h3>
+        <p>Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
-
-    <div class="col-l-3 col-m-6 blurb">
-      <p>Morbi dapibus vitae justo eu molestie. vestibulum tempor risus quis eros odio.</p>
-      <div class="read-more">
-        <a href="#">read more</a>
-      </div>
-    </div>
-
-  </div> <!-- end of row -->
-</div> <!-- end of container -->
+  </div> <!-- end of container -->
 </body>
 </html>
