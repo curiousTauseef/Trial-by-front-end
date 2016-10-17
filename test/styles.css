@@ -2,6 +2,34 @@
   box-sizing: border-box;
 }
 
+body, html {
+  margin: 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.blurb {
+  text-align: center;
+  height: 150px;
+  position: relative;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
 .row::after {
     content: "";
     clear: both;
