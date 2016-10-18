@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif; }
+
+h1, h2 {
+  font-weight: 100;
+  margin: 0; }
+
+body, html, ul {
+  margin: 0; }
+
+.container {
+  max-width: 80%;
+  margin: 0 auto; }
+
+header {
+  background-color: black;
+  color: white;
+  position: relative;
+  height: 100px; }
+  header .header-item {
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    padding-top: 0 !important; }
+    header .header-item .brand {
+      font-size: 2.7em; }
+      header .header-item .brand .ipsum {
+        color: #ff3333;
+        font-weight: 900; }
+      header .header-item .brand .logo {
+        color: white;
+        font-weight: 100; }
+    header .header-item .account {
+      text-align: right; }
+
+input {
+  background-color: #666666;
+  font-size: 1em;
+  border: 1px solid #292929;
+  padding: 10px 5px;
+  width: 100%; }
+
+input::-webkit-input-placeholder {
+  font-style: italic; }
+
+input::-ms-input-placeholder {
+  font-style: italic; }
+
+input::-moz-placeholder {
+  font-style: italic; }
+
+nav {
+  background-color: #333333; }
+
+nav ul {
+  list-style: none;
+  list-style-position: inside;
+  color: #8b8b8b;
+  padding: 15px; }
+
+nav ul li {
+  display: inline;
+  padding: 20px;
+  font-size: 1.2em; }
+
+.hero {
+  height: 200px;
+  background-image: url(../images/background-wood.jpg);
+  background-size: cover;
+  position: relative;
+  text-align: center; }
+
+.subheading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.2em;
+  padding: 15px;
+  padding-bottom: 30px; }
+
+.main-btn {
+  background: linear-gradient(#f12a2a, #b80505);
+  font-size: 1.1em;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%); }
+
+.main-btn:hover {
+  background: #ff5b5b; }
+
+.blurb {
+  text-align: center;
+  height: 160px;
+  position: relative;
+  color: #6d6d6d; }
+
+.read-more {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 90%; }
+
+.read-more a {
+  text-decoration: none;
+  color: #ff3333; }
+
+.read-more a:hover {
+  color: #ff5b5b; }
+
+.read-more p {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  line-height: 0;
+  padding: 0; }
+
+.read-more span {
+  background: #fff;
+  padding: 0 15px; }
+
+.quote {
+  background-color: #f0f0f0;
+  color: #868686;
+  font-size: 1.4em;
+  font-weight: 100;
+  font-style: italic;
+  padding: 5px !important; }
+
+.quote-text {
+  padding-left: 100px;
+  padding-top: 10px; }
+
+.quote-img {
+  float: left; }
+
+.places {
+  margin-top: 60px; }
+
+.place img {
+  width: 100%; }
+
+.place {
+  position: relative; }
+
+.place h3 {
+  color: #ff3333;
+  position: absolute;
+  top: -50px; }
+
+.place-text {
+  text-align: justify; }
+
+/*.action {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}*/
+.action {
+  text-align: center; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px; }
+
+/* Desktop Grid: */
+.col-l-1 {
+  width: 8.33%; }
+
+.col-l-2 {
+  width: 16.66%; }
+
+.col-l-3 {
+  width: 25%; }
+
+.col-l-4 {
+  width: 33.33%; }
+
+.col-l-5 {
+  width: 41.66%; }
+
+.col-l-6 {
+  width: 50%; }
+
+.col-l-7 {
+  width: 58.33%; }
+
+.col-l-8 {
+  width: 66.66%; }
+
+.col-l-9 {
+  width: 75%; }
+
+.col-l-10 {
+  width: 83.33%; }
+
+.col-l-11 {
+  width: 91.66%; }
+
+.col-l-12 {
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  /* Tablet Grid: */
+  .col-m-1 {
+    width: 8.33%; }
+  .col-m-2 {
+    width: 16.66%; }
+  .col-m-3 {
+    width: 25%; }
+  .col-m-4 {
+    width: 33.33%; }
+  .col-m-5 {
+    width: 41.66%; }
+  .col-m-6 {
+    width: 50%; }
+  .col-m-7 {
+    width: 58.33%; }
+  .col-m-8 {
+    width: 66.66%; }
+  .col-m-9 {
+    width: 75%; }
+  .col-m-10 {
+    width: 83.33%; }
+  .col-m-11 {
+    width: 91.66%; }
+  .col-m-12 {
+    width: 100%; }
+  .account {
+    display: none; }
+  .subheading {
+    font-size: 1em; }
+  .place-img {
+    width: 40%;
+    margin-right: 10px;
+    float: left; }
+  .place-content {
+    display: inline; }
+  .place h3 {
+    position: static;
+    margin-top: 0; } }
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+  [class*="col-"] {
+    width: 100%; }
+  .subheading {
+    width: 90%; }
+  .place-img {
+    width: 100%; } }

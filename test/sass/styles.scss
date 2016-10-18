@@ -22,32 +22,35 @@ header {
   color: white;
   position: relative;
   height: 100px;
+
+  .header-item {
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    padding-top: 0!important;
+
+    .brand {
+      font-size: 2.7em;
+
+      .ipsum {
+        color:#ff3333;
+        font-weight: 900;
+      }
+
+      .logo {
+        color: white;
+        font-weight: 100;
+      }
+    }
+
+    .account {
+      text-align: right;
+    }
+  }
 }
 
-.header-item {
-  height: 100px;
-  line-height: 100px;
-  vertical-align: middle;
-  padding-top: 0!important;
-}
 
-.account {
-  text-align: right;
-}
 
-.brand {
-  font-size: 2.7em;
-}
-
-.ipsum {
-  color:#ff3333;
-  font-weight: 900;
-}
-
-.logo {
-  color: white;
-  font-weight: 100;
-}
 
 input {
   background-color: #666666;
@@ -88,7 +91,7 @@ nav ul li {
 
 .hero {
   height: 200px;
-  background-image: url(./images/background-wood.jpg);
+  background-image: url(../images/background-wood.jpg);
   background-size: cover;
   position: relative;
   text-align: center;
@@ -195,6 +198,22 @@ nav ul li {
   top: -50px;
 }
 
+.place-text {
+  text-align: justify;
+}
+
+/*.action {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}*/
+
+.action {
+  text-align: center;
+}
+
 .row::after {
     content: "";
     clear: both;
@@ -290,18 +309,19 @@ nav ul li {
     font-size: 1em;
   }
 
-  .place img {
+  .place-img {
     width: 40%;
     margin-right: 10px;
     float: left;
   }
 
-  .place p {
+  .place-content {
     display: inline;
   }
 
   .place h3 {
     position: static;
+    margin-top: 0;
   }
 }
 
@@ -315,7 +335,7 @@ nav ul li {
     width: 90%;
   }
 
-  .place img {
+  .place-img {
     width: 100%;
   }
 }
