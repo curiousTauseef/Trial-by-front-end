@@ -8,23 +8,19 @@ var src = {
   html: "./index.html",
   sass: "./sass/*.scss",
   css: "./css/*.css",
-  cssDest: "./css/"
+  cssDest: "./css/",
+  cssMin: "./min/*.css"
 }
 
-gulp.task('styles', function() {
-    gulp.src(src.sass)
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(src.cssDest))
-});
-
-
-gulp.task('serve', ['sass', 'minify-css'], function() {
+gulp.task('serve', ['sass'], function() {
     browserSync.init({
         proxy: "http://localhost:8000/"
     });
 
     gulp.watch(src.sass, ['sass']);
+    gulp.watch(src.css, ['minify-css']);
     gulp.watch(src.html).on('change', browserSync.reload);
+    gulp.watch(src.cssMin).on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
@@ -41,4 +37,4 @@ gulp.task('minify-css', function() {
     .pipe(gulp.dest('min'));
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['serve', 'minify-css']);
