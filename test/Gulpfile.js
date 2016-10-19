@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var rename = require("gulp-rename");
 var cleanCSS = require('gulp-clean-css');
+var autoprefixer = require('gulp-autoprefixer');
 
 var src = {
   html: "./index.html",
@@ -32,6 +33,10 @@ gulp.task('sass', function() {
 
 gulp.task('minify-css', function() {
   return gulp.src(src.css)
+    .pipe(autoprefixer({
+              browsers: ['last 2 versions'],
+              cascade: false
+          }))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('min'));

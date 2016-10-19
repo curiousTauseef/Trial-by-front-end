@@ -1,36 +1,39 @@
 $(function (){
   console.log("js loaded");
 
-$('nav ul li').click(function(){
+//Toggle current class on navbar on click 
+  $('nav ul li').click(function(){
 
-  console.log(this);
+    if(!$(this).hasClass("responsive")){
+      
+      $(this).siblings('.current').removeClass('current');
+      $(this).addClass('current');
+    }
 
-  $(this).siblings('.current').removeClass('current');
-  
-  $(this).addClass('current');
+  });
 
-});
-
+// display nav menu when clicking menu icon
   $navItems = null;
 
   $("nav ul li:nth-child(1)")
   .on("click", function() {
 
     event.preventDefault();
-
     $navItems = $(this).siblings();
-
     $navItems.slideToggle();
-  });
 
+  });
 
   $(window).on('resize', function (){
 
+    // fix display of navbar items when screen is resized
     if ($(window).width() > 690 && $navItems !== null){
       $navItems.show().css('display', 'inline');
       $("nav ul li:nth-child(2)").hide();
     }
+
     else if($(window).width() < 690 && $navItems !== null && $navItems.is(':visible')) {
+        $navItems.show().css('display', 'block');
         $navItems.hide();
       }
 
@@ -39,9 +42,27 @@ $('nav ul li').click(function(){
       $("html, body").animate({ scrollTop: 0 }, "slow");
     });
 
+    // fix display of footer links when screen is resized
+    if($(window).width() > 690 && $('.footerList').is(':hidden')){
+      $('.footerList').show();
+      $('.sitemapToggle').text('+');
+    }
 
   });
 
-  
+  $('.sitemap p').click(function(){
+
+    if($('.sitemapToggle').text() === "+") {
+      $('.sitemapToggle').text('-');
+      $('.footerList').show();
+    }
+
+    else if($('.sitemapToggle').text() === "-"){
+      $('.sitemapToggle').text('+');
+      $('.footerList').hide();
+    }
+
+  });
+
 });
 
