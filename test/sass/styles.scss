@@ -86,6 +86,10 @@ nav {
         color: #8b8b8b;
       }
     }
+
+    li:nth-child(1), li:nth-child(2){
+      display: none;
+    }
   }
 }
 
@@ -190,6 +194,7 @@ nav {
 
 .places {
   margin-top: 60px;
+  margin-bottom: 40px;
 
   .place {
     position: relative;
@@ -223,6 +228,47 @@ nav {
     }
   }
 }
+
+.subfooter1-wrapper {
+  position: relative;
+  height: 200px;
+
+  .subfooter1 {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-width: 500px;
+
+    p {
+      font-size: 1.2em;
+    }
+
+    .subfooter1-btn {
+      background: linear-gradient(#f12a2a, #b80505);
+      font-size: 1.1em;
+      padding: 10px 30px;
+      color: white;
+      text-decoration: none;
+
+    }
+  }
+}
+
+.subfooter2{
+  background: grey;
+
+  ul li {
+    list-style: none;
+    list-style-position: inside;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 
 .row::after {
     content: "";
@@ -377,14 +423,24 @@ nav {
     margin-top: -13px;
   }
 
-  nav ul li:nth-child(1) a:before {
-    content: "\2630";
+  nav ul li:nth-child(1){
+    display: inline;
     text-align: left;
-    float: left;
-
   }
 
-  nav ul li:nth-child(2), nav ul li:nth-child(2), nav ul li:nth-child(3), nav ul li:nth-child(4), nav ul li:nth-child(5), nav ul li:nth-child(6) {
+  nav ul li:nth-child(1) a:before {
+    content: "\2630";
+    float: left;
+    margin-left: 20px;
+    color: white;
+  }
+
+  nav ul li:nth-child(2), 
+  nav ul li:nth-child(3),
+  nav ul li:nth-child(4),
+  nav ul li:nth-child(5), 
+  nav ul li:nth-child(6), 
+  nav ul li:nth-child(7) {
     display: none;
     text-align: left;
   }
