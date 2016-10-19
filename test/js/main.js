@@ -40,12 +40,17 @@ $(function (){
     $(".pagetop").click(function() {
       event.preventDefault();
       $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
     });
 
     // fix display of footer links when screen is resized
     if($(window).width() > 690 && $('.footerList').is(':hidden')){
       $('.footerList').show();
       $('.sitemapToggle').text('+');
+    }
+
+    else if ($(window).width() < 690 && $('.footerList').is(':visible')){
+      $('.footerList').hide();
     }
 
   });

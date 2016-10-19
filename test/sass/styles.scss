@@ -45,6 +45,23 @@ header {
 
     .account {
       text-align: right;
+      a {
+        color: #999999;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: lighten(#999999, 20%);
+      }
+
+      i {
+        color: #999999;
+        font-size: 0.8em;
+      }
+
+      .divider {
+        padding: 0 10px;
+      }
     }
 
     input {
@@ -170,7 +187,7 @@ nav {
   }
 
   a:hover {
-    color: #ff5b5b;
+    color: lighten(#ff3333, 20%);
   }
 
   p {
@@ -239,7 +256,12 @@ nav {
 
     a {
       text-decoration: none;
+      color: #333;
     }
+  }
+
+  .action:hover {
+    background: lighten(#9b9b9b, 20%)
   }
 }
 
@@ -265,7 +287,10 @@ nav {
       padding: 10px 30px;
       color: white;
       text-decoration: none;
+    }
 
+    .subfooter1-btn:hover {
+        background: #ff5b5b;
     }
   }
 }
@@ -273,6 +298,10 @@ nav {
 .subfooter2 {
   background: #333333;
   color: #adadad;
+
+  a:hover {
+    color: lighten(#adadad,20%);
+  }
 
   .sitemap {
     text-align: center;
@@ -294,6 +323,10 @@ nav {
         color: #333;
         padding: 10px 40px;
         text-decoration: none;
+      }
+
+      a:hover {
+        background: lighten(#9b9b9b, 20%);
       }
     }
   }
@@ -326,11 +359,15 @@ nav {
         width: 45%;
         filter: brightness(150%);
       }
+
+      img:hover {
+        filter: brightness(200%);
+      }
     }
   }
 }
 
-.footer {
+footer {
   background: #ff3333;
   height: 100%;
   color: white;
@@ -350,6 +387,9 @@ nav {
         text-decoration: none;
         color: white;
       }
+      a:hover {
+        color: darken(#ffffff, 20%);
+      }
     }
 
     .footerLink:nth-child(3) a {
@@ -359,7 +399,7 @@ nav {
 
 }
 
-.subfooter2:before, .footer:before {
+.subfooter2:before, footer:before {
   content: '';
   position: absolute;
   width: 30px;

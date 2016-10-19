@@ -33,6 +33,16 @@ header {
         font-weight: 100; }
     header .header-item .account {
       text-align: right; }
+      header .header-item .account a {
+        color: #999999;
+        text-decoration: none; }
+      header .header-item .account a:hover {
+        color: #cccccc; }
+      header .header-item .account i {
+        color: #999999;
+        font-size: 0.8em; }
+      header .header-item .account .divider {
+        padding: 0 10px; }
     header .header-item input {
       background: url(../images/search.svg) no-repeat right 10px center;
       background-color: #666666; }
@@ -122,7 +132,7 @@ nav {
     text-decoration: none;
     color: #ff3333; }
   .read-more a:hover {
-    color: #ff5b5b; }
+    color: #ff9999; }
   .read-more p {
     text-align: center;
     border-bottom: 1px solid #ddd;
@@ -167,7 +177,10 @@ nav {
     width: 90%;
     bottom: 0; }
     .places .action a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #333; }
+  .places .action:hover {
+    background: #cecece; }
 
 .subfooter1-wrapper {
   position: relative;
@@ -187,10 +200,14 @@ nav {
       padding: 10px 30px;
       color: white;
       text-decoration: none; }
+    .subfooter1-wrapper .subfooter1 .subfooter1-btn:hover {
+      background: #ff5b5b; }
 
 .subfooter2 {
   background: #333333;
   color: #adadad; }
+  .subfooter2 a:hover {
+    color: #e0e0e0; }
   .subfooter2 .sitemap {
     text-align: center;
     padding-top: 14px;
@@ -206,6 +223,8 @@ nav {
       color: #333;
       padding: 10px 40px;
       text-decoration: none; }
+    .subfooter2 .newsletter p a:hover {
+      background: #cecece; }
   .subfooter2 ul {
     margin: 0;
     padding: 0; }
@@ -223,27 +242,31 @@ nav {
       .subfooter2 .socialMedia .socialIconWrapper img {
         width: 45%;
         filter: brightness(150%); }
+      .subfooter2 .socialMedia .socialIconWrapper img:hover {
+        filter: brightness(200%); }
 
-.footer {
+footer {
   background: #ff3333;
   height: 100%;
   color: white;
   text-align: center; }
-  .footer .flex-container {
+  footer .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
-    .footer .flex-container .footerLink {
+    footer .flex-container .footerLink {
       width: 33%;
       padding: 15px; }
-      .footer .flex-container .footerLink a {
+      footer .flex-container .footerLink a {
         text-decoration: none;
         color: white; }
-    .footer .flex-container .footerLink:nth-child(3) a {
+      footer .flex-container .footerLink a:hover {
+        color: #cccccc; }
+    footer .flex-container .footerLink:nth-child(3) a {
       text-decoration: underline; }
 
-.subfooter2:before, .footer:before {
+.subfooter2:before, footer:before {
   content: '';
   position: absolute;
   width: 30px;
